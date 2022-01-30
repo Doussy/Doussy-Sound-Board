@@ -67,8 +67,8 @@ let tabs = [
     name: 'People',
     items: [
       {
-        name: 'Jan',
-        sound: 'dog.mp3',
+        name: 'Laugh',
+        sound: './sounds/people/laugh.wav',
       },
       {
         name: 'Kobus',
@@ -159,6 +159,7 @@ export default function Home() {
       <div className="flex justify-between">
         {tabs.map((tab) => (
           <div
+            key={tab.name}
             className="cursor-pointer bg-amber-500 p-2 text-xl font-bold"
             onClick={() => {
               setActiveTab(tab.name)
@@ -173,6 +174,7 @@ export default function Home() {
       <div className="flex justify-center p-10">
         {activeItems.slice(0, 10).map((item, index) => (
           <div
+            key={item.name + item.sound}
             className="cursor-pointer rounded-lg border p-10"
             onClick={() => {
               let song = new Audio(item.sound)
