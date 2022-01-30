@@ -7,11 +7,11 @@ let tabs = [
     items: [
       {
         name: 'Dog',
-        sound: './sounds/animals/dog.mp3',
+        sound: './sounds/animals/1.mp3',
       },
       {
         name: 'Cat',
-        sound: './sounds/animals/cat.wav',
+        sound: './sounds/animals/2.wav',
       },
       {
         name: 'Cow',
@@ -68,7 +68,7 @@ let tabs = [
     items: [
       {
         name: 'Laugh',
-        sound: './sounds/people/laugh.wav',
+        sound: './sounds/people/1.wav',
       },
       {
         name: 'Kobus',
@@ -99,50 +99,40 @@ export default function Home() {
     window.addEventListener('keypress', (e) => {
       switch (e.key) {
         case '1':
-          let sound1 = new Audio(activeItems[0].sound)
-          sound1.play()
+          document.getElementById('key_1')?.click()
           return
         case '2':
-          let sound2 = new Audio(activeItems[1].sound)
-          sound2.play()
+          document.getElementById('key_2')?.click()
           return
         case '3':
-          let sound3 = new Audio(activeItems[2].sound)
-          sound3.play()
+          document.getElementById('key_3')?.click()
           return
         case '4':
-          let sound4 = new Audio(activeItems[3].sound)
-          sound4.play()
+          document.getElementById('key_4')?.click()
           return
         case '5':
-          let sound5 = new Audio(activeItems[4].sound)
-          sound5.play()
+          document.getElementById('key_5')?.click()
           return
         case '6':
-          let sound6 = new Audio(activeItems[5].sound)
-          sound6.play()
+          document.getElementById('key_6')?.click()
           return
         case '7':
-          let sound7 = new Audio(activeItems[6].sound)
-          sound7.play()
+          document.getElementById('key_7')?.click()
           return
         case '8':
-          let sound8 = new Audio(activeItems[7].sound)
-          sound8.play()
+          document.getElementById('key_8')?.click()
           return
         case '9':
-          let sound9 = new Audio(activeItems[8].sound)
-          sound9.play()
+          document.getElementById('key_9')?.click()
           return
         case '0':
-          let sound0 = new Audio(activeItems[9].sound)
-          sound0.play()
+          document.getElementById('key_10')?.click()
           return
         default:
           return
       }
     })
-  }, [activeItems])
+  }, [activeItems, activeTab])
 
   return (
     <div className="text-center">
@@ -174,11 +164,11 @@ export default function Home() {
       <div className="flex justify-center p-10">
         {activeItems.slice(0, 10).map((item, index) => (
           <div
+            id={`key_${index + 1}`}
             key={item.name + item.sound}
             className="cursor-pointer rounded-lg border p-10"
             onClick={() => {
-              let song = new Audio(item.sound)
-              song.play()
+              new Audio(item.sound).play()
             }}
           >
             <div>{item.name}</div>
