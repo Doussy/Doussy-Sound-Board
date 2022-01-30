@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 
+let keyboardRow1 = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p']
+let keyboardRow2 = ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l']
+let keyboardRow3 = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
+
 let tabs = [
   {
     name: 'Funny',
@@ -44,6 +48,110 @@ let tabs = [
       {
         name: 'Borat - A Very Nice',
         sound: './sounds/funny/10.mp3',
+      },
+      {
+        name: 'Have you tried...',
+        sound: './sounds/funny/q.mp3',
+      },
+      {
+        name: 'Test W',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test E',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test R',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test T',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test Y',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test U',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test I',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test O',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test P',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test A',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test S',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test D',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test F',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test G',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test H',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test J',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test K',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test L',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test Z',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test X',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test C',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test V',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test B',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test N',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Test M',
+        sound: './sounds/funny/1.mp3',
       },
     ],
   },
@@ -160,6 +268,84 @@ export default function Home() {
         case '0':
           document.getElementById('key_10')?.click()
           return
+        case 'q':
+          document.getElementById('key_q')?.click()
+          return
+        case 'w':
+          document.getElementById('key_w')?.click()
+          return
+        case 'e':
+          document.getElementById('key_e')?.click()
+          return
+        case 'r':
+          document.getElementById('key_r')?.click()
+          return
+        case 't':
+          document.getElementById('key_t')?.click()
+          return
+        case 'y':
+          document.getElementById('key_y')?.click()
+          return
+        case 'u':
+          document.getElementById('key_u')?.click()
+          return
+        case 'i':
+          document.getElementById('key_i')?.click()
+          return
+        case 'o':
+          document.getElementById('key_o')?.click()
+          return
+        case 'p':
+          document.getElementById('key_p')?.click()
+          return
+        case 'a':
+          document.getElementById('key_a')?.click()
+          return
+        case 's':
+          document.getElementById('key_s')?.click()
+          return
+        case 'd':
+          document.getElementById('key_d')?.click()
+          return
+        case 'f':
+          document.getElementById('key_f')?.click()
+          return
+        case 'g':
+          document.getElementById('key_g')?.click()
+          return
+        case 'h':
+          document.getElementById('key_h')?.click()
+          return
+        case 'j':
+          document.getElementById('key_j')?.click()
+          return
+        case 'k':
+          document.getElementById('key_k')?.click()
+          return
+        case 'l':
+          document.getElementById('key_l')?.click()
+          return
+        case 'z':
+          document.getElementById('key_z')?.click()
+          return
+        case 'x':
+          document.getElementById('key_x')?.click()
+          return
+        case 'c':
+          document.getElementById('key_c')?.click()
+          return
+        case 'v':
+          document.getElementById('key_v')?.click()
+          return
+        case 'b':
+          document.getElementById('key_b')?.click()
+          return
+        case 'n':
+          document.getElementById('key_n')?.click()
+          return
+        case 'm':
+          document.getElementById('key_m')?.click()
+          return
         default:
           return
       }
@@ -173,11 +359,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-gray-300 p-3 font-bold mb-3">
+      <div className="mb-3 bg-gray-300 p-3 font-bold">
         <div>Doussy Sound Board</div>
       </div>
 
-      <div className="flex justify-between mb-3">
+      <div className="mb-3 flex justify-between">
         {tabs.map((tab) => (
           <div
             key={tab.name}
@@ -204,6 +390,54 @@ export default function Home() {
           >
             <div className="p-4 font-bold">{item.name}</div>
             <div className="bg-gray-200">{index === 9 ? 0 : index + 1}</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex justify-center">
+        {activeItems.slice(10, 20).map((item, index) => (
+          <div
+            id={`key_${keyboardRow1[index]}`}
+            key={item.name + item.sound}
+            className="m-1 flex cursor-pointer flex-col rounded-lg border"
+            onClick={() => {
+              new Audio(item.sound).play()
+            }}
+          >
+            <div className="p-4 font-bold">{item.name}</div>
+            <div className="bg-gray-200 capitalize">{keyboardRow1[index]}</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex justify-center">
+        {activeItems.slice(20, 29).map((item, index) => (
+          <div
+            id={`key_${keyboardRow2[index]}`}
+            key={item.name + item.sound}
+            className="m-1 flex cursor-pointer flex-col rounded-lg border"
+            onClick={() => {
+              new Audio(item.sound).play()
+            }}
+          >
+            <div className="p-4 font-bold">{item.name}</div>
+            <div className="bg-gray-200 capitalize">{keyboardRow2[index]}</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex justify-center">
+        {activeItems.slice(29, 36).map((item, index) => (
+          <div
+            id={`key_${keyboardRow3[index]}`}
+            key={item.name + item.sound}
+            className="m-1 flex cursor-pointer flex-col rounded-lg border"
+            onClick={() => {
+              new Audio(item.sound).play()
+            }}
+          >
+            <div className="p-4 font-bold">{item.name}</div>
+            <div className="bg-gray-200 capitalize">{keyboardRow3[index]}</div>
           </div>
         ))}
       </div>
