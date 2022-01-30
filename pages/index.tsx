@@ -3,6 +3,51 @@ import { useEffect, useState } from 'react'
 
 let tabs = [
   {
+    name: 'Funny',
+    items: [
+      {
+        name: 'Wet Fart',
+        sound: './sounds/funny/1.mp3',
+      },
+      {
+        name: 'Badum TSS',
+        sound: './sounds/funny/2.mp3',
+      },
+      {
+        name: 'Fuckoff',
+        sound: './sounds/funny/3.mp3',
+      },
+      {
+        name: 'This is Sparta',
+        sound: './sounds/funny/4.mp3',
+      },
+      {
+        name: 'Trumpet',
+        sound: './sounds/funny/5.mp3',
+      },
+      {
+        name: 'Ka Ching',
+        sound: './sounds/funny/6.mp3',
+      },
+      {
+        name: 'Fart',
+        sound: './sounds/funny/7.mp3',
+      },
+      {
+        name: 'Sad Trombone',
+        sound: './sounds/funny/8.mp3',
+      },
+      {
+        name: 'Borat - Great Success',
+        sound: './sounds/funny/9.mp3',
+      },
+      {
+        name: 'Borat - A Very Nice',
+        sound: './sounds/funny/10.mp3',
+      },
+    ],
+  },
+  {
     name: 'Animals',
     items: [
       {
@@ -76,23 +121,10 @@ let tabs = [
       },
     ],
   },
-  {
-    name: 'Funny',
-    items: [
-      {
-        name: 'Fart',
-        sound: 'dog.mp3',
-      },
-      {
-        name: 'Fart2',
-        sound: 'cat.mp3',
-      },
-    ],
-  },
 ]
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState('Animals')
+  const [activeTab, setActiveTab] = useState(tabs[0].name)
   const [activeItems, setActiveItems] = useState(tabs[0].items)
 
   useEffect(() => {
@@ -141,12 +173,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-gray-300 p-3 font-bold">
+      <div className="bg-gray-300 p-3 font-bold mb-3">
         <div>Doussy Sound Board</div>
-        <div>Active Tab: {activeTab}</div>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between mb-3">
         {tabs.map((tab) => (
           <div
             key={tab.name}
@@ -161,18 +192,18 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="flex justify-center p-10">
+      <div className="flex justify-center">
         {activeItems.slice(0, 10).map((item, index) => (
           <div
             id={`key_${index + 1}`}
             key={item.name + item.sound}
-            className="cursor-pointer rounded-lg border p-10"
+            className="m-1 flex cursor-pointer flex-col rounded-lg border"
             onClick={() => {
               new Audio(item.sound).play()
             }}
           >
-            <div>{item.name}</div>
-            {index === 9 ? <div>0</div> : <div>{index + 1}</div>}
+            <div className="p-4 font-bold">{item.name}</div>
+            <div className="bg-gray-200">{index === 9 ? 0 : index + 1}</div>
           </div>
         ))}
       </div>
