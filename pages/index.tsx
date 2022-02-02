@@ -353,21 +353,21 @@ export default function Home() {
   }, [activeItems, activeTab])
 
   return (
-    <div className="text-center">
+    <div className="min-h-screen text-center bg-black">
       <Head>
         <title>Doussy Sound Board</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="mb-3 bg-gray-300 p-3 font-bold">
+      <div className="p-3 mb-3 font-bold bg-green-500">
         <div>Doussy Sound Board</div>
       </div>
 
-      <div className="mb-3 flex justify-between">
+      <div className="flex justify-between mb-3">
         {tabs.map((tab) => (
           <div
             key={tab.name}
-            className="cursor-pointer bg-amber-500 p-2 text-xl font-bold"
+            className="p-2 text-xl font-bold cursor-pointer bg-amber-500"
             onClick={() => {
               setActiveTab(tab.name)
               setActiveItems(tab.items)
@@ -383,7 +383,7 @@ export default function Home() {
           <div
             id={`key_${index + 1}`}
             key={item.name + item.sound}
-            className="m-1 flex cursor-pointer flex-col rounded-lg border"
+            className="flex flex-col m-1 border rounded-lg cursor-pointer bg-cyan-500"
             onClick={() => {
               new Audio(item.sound).play()
             }}
@@ -399,13 +399,13 @@ export default function Home() {
           <div
             id={`key_${keyboardRow1[index]}`}
             key={item.name + item.sound}
-            className="m-1 flex cursor-pointer flex-col rounded-lg border"
+            className="flex flex-col m-1 border rounded-lg cursor-pointer bg-cyan-500"
             onClick={() => {
               new Audio(item.sound).play()
             }}
           >
             <div className="p-4 font-bold">{item.name}</div>
-            <div className="bg-gray-200 capitalize">{keyboardRow1[index]}</div>
+            <div className="capitalize bg-gray-200">{keyboardRow1[index]}</div>
           </div>
         ))}
       </div>
@@ -415,13 +415,13 @@ export default function Home() {
           <div
             id={`key_${keyboardRow2[index]}`}
             key={item.name + item.sound}
-            className="m-1 flex cursor-pointer flex-col rounded-lg border"
+            className="flex flex-col m-1 border rounded-lg cursor-pointer bg-cyan-500"
             onClick={() => {
               new Audio(item.sound).play()
             }}
           >
             <div className="p-4 font-bold">{item.name}</div>
-            <div className="bg-gray-200 capitalize">{keyboardRow2[index]}</div>
+            <div className="capitalize bg-gray-200">{keyboardRow2[index]}</div>
           </div>
         ))}
       </div>
@@ -431,13 +431,13 @@ export default function Home() {
           <div
             id={`key_${keyboardRow3[index]}`}
             key={item.name + item.sound}
-            className="m-1 flex cursor-pointer flex-col rounded-lg border"
+            className="flex flex-col m-1 border rounded-lg cursor-pointer bg-cyan-500"
             onClick={() => {
               new Audio(item.sound).play()
             }}
           >
             <div className="p-4 font-bold">{item.name}</div>
-            <div className="bg-gray-200 capitalize">{keyboardRow3[index]}</div>
+            <div className="capitalize bg-gray-200">{keyboardRow3[index]}</div>
           </div>
         ))}
       </div>
