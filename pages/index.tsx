@@ -7,225 +7,115 @@ let keyboardRow3 = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
 
 let tabs = [
   {
-    name: 'Funny',
+    name: 'Driaan',
     items: [
       {
-        name: 'Wet Fart',
-        sound: './sounds/funny/1.mp3',
+        name: 'Mense soos jy',
+        sound: './sounds/driaan/1.mp3',
       },
       {
-        name: 'Badum TSS',
-        sound: './sounds/funny/2.mp3',
+        name: 'Pateties',
+        sound: './sounds/driaan/2.mp3',
       },
       {
-        name: 'Fuckoff',
-        sound: './sounds/funny/3.mp3',
+        name: 'Hoe de fok',
+        sound: './sounds/driaan/3.mp3',
       },
       {
-        name: 'This is Sparta',
-        sound: './sounds/funny/4.mp3',
+        name: 'In watter wereld lewe jy',
+        sound: './sounds/driaan/4.mp3',
       },
       {
-        name: 'Trumpet',
-        sound: './sounds/funny/5.mp3',
+        name: 'Geld',
+        sound: './sounds/driaan/5.mp3',
       },
       {
-        name: 'Ka Ching',
-        sound: './sounds/funny/6.mp3',
+        name: 'Raakgery',
+        sound: './sounds/driaan/6.mp3',
       },
       {
-        name: 'Fart',
-        sound: './sounds/funny/7.mp3',
+        name: 'Verbaas my',
+        sound: './sounds/driaan/7.mp3',
       },
       {
-        name: 'Sad Trombone',
-        sound: './sounds/funny/8.mp3',
+        name: 'Ook al raakgery',
+        sound: './sounds/driaan/8.mp3',
       },
       {
-        name: 'Borat - Great Success',
-        sound: './sounds/funny/9.mp3',
+        name: 'Fok!',
+        sound: './sounds/driaan/9.mp3',
       },
       {
-        name: 'Borat - A Very Nice',
-        sound: './sounds/funny/10.mp3',
+        name: 'Kak en drama',
+        sound: './sounds/driaan/10.mp3',
       },
       {
-        name: 'Have you tried...',
-        sound: './sounds/funny/q.mp3',
+        name: 'My inkomste',
+        sound: './sounds/driaan/11.mp3',
       },
       {
-        name: 'Test W',
-        sound: './sounds/funny/1.mp3',
+        name: 'Toelaat',
+        sound: './sounds/driaan/12.mp3',
       },
       {
-        name: 'Test E',
-        sound: './sounds/funny/1.mp3',
+        name: 'Befok gemaak',
+        sound: './sounds/driaan/13.mp3',
       },
       {
-        name: 'Test R',
-        sound: './sounds/funny/1.mp3',
+        name: 'dag opfok - lank',
+        sound: './sounds/driaan/14.mp3',
       },
       {
-        name: 'Test T',
-        sound: './sounds/funny/1.mp3',
+        name: 'dag opfok',
+        sound: './sounds/driaan/15.mp3',
       },
       {
-        name: 'Test Y',
-        sound: './sounds/funny/1.mp3',
+        name: 'pateties 2',
+        sound: './sounds/driaan/16.mp3',
       },
       {
-        name: 'Test U',
-        sound: './sounds/funny/1.mp3',
+        name: 'Fok weet',
+        sound: './sounds/driaan/17.mp3',
       },
       {
-        name: 'Test I',
-        sound: './sounds/funny/1.mp3',
+        name: 'Regte police clearance',
+        sound: './sounds/driaan/18.mp3',
       },
       {
-        name: 'Test O',
-        sound: './sounds/funny/1.mp3',
+        name: 'Selfde storie',
+        sound: './sounds/driaan/19.mp3',
       },
       {
-        name: 'Test P',
-        sound: './sounds/funny/1.mp3',
+        name: 'Nie n scammer nie',
+        sound: './sounds/driaan/20.mp3',
       },
       {
-        name: 'Test A',
-        sound: './sounds/funny/1.mp3',
+        name: 'My fok weet',
+        sound: './sounds/driaan/21.mp3',
       },
       {
-        name: 'Test S',
-        sound: './sounds/funny/1.mp3',
+        name: 'Het nie geld',
+        sound: './sounds/driaan/22.mp3',
       },
       {
-        name: 'Test D',
-        sound: './sounds/funny/1.mp3',
+        name: 'My donner',
+        sound: './sounds/driaan/23.mp3',
       },
       {
-        name: 'Test F',
-        sound: './sounds/funny/1.mp3',
+        name: 'Fok weet 2',
+        sound: './sounds/driaan/24.mp3',
       },
       {
-        name: 'Test G',
-        sound: './sounds/funny/1.mp3',
+        name: 'Fokken betaal',
+        sound: './sounds/driaan/25.mp3',
       },
       {
-        name: 'Test H',
-        sound: './sounds/funny/1.mp3',
+        name: 'Probleem',
+        sound: './sounds/driaan/26.mp3',
       },
       {
-        name: 'Test J',
-        sound: './sounds/funny/1.mp3',
-      },
-      {
-        name: 'Test K',
-        sound: './sounds/funny/1.mp3',
-      },
-      {
-        name: 'Test L',
-        sound: './sounds/funny/1.mp3',
-      },
-      {
-        name: 'Test Z',
-        sound: './sounds/funny/1.mp3',
-      },
-      {
-        name: 'Test X',
-        sound: './sounds/funny/1.mp3',
-      },
-      {
-        name: 'Test C',
-        sound: './sounds/funny/1.mp3',
-      },
-      {
-        name: 'Test V',
-        sound: './sounds/funny/1.mp3',
-      },
-      {
-        name: 'Test B',
-        sound: './sounds/funny/1.mp3',
-      },
-      {
-        name: 'Test N',
-        sound: './sounds/funny/1.mp3',
-      },
-      {
-        name: 'Test M',
-        sound: './sounds/funny/1.mp3',
-      },
-    ],
-  },
-  {
-    name: 'Animals',
-    items: [
-      {
-        name: 'Dog',
-        sound: './sounds/animals/1.mp3',
-      },
-      {
-        name: 'Cat',
-        sound: './sounds/animals/2.wav',
-      },
-      {
-        name: 'Cow',
-        sound: 'cow.mp3',
-      },
-      {
-        name: 'Chicken',
-        sound: 'chicken.mp3',
-      },
-      {
-        name: 'Pig',
-        sound: 'pig.mp3',
-      },
-      {
-        name: 'Sheep',
-        sound: 'sheep.mp3',
-      },
-      {
-        name: 'Horse',
-        sound: 'horse.mp3',
-      },
-      {
-        name: 'Goat',
-        sound: 'goat.mp3',
-      },
-      {
-        name: 'Pigeon',
-        sound: 'pigeon.mp3',
-      },
-      {
-        name: 'Duck',
-        sound: 'duck.mp3',
-      },
-      {
-        name: 'Dolphin',
-        sound: 'dolphin.mp3',
-      },
-      {
-        name: 'Elephant',
-        sound: 'elephant.mp3',
-      },
-      {
-        name: 'Giraffe',
-        sound: 'giraffe.mp3',
-      },
-      {
-        name: 'Hippo',
-        sound: 'hippo.mp3',
-      },
-    ],
-  },
-  {
-    name: 'People',
-    items: [
-      {
-        name: 'Laugh',
-        sound: './sounds/people/1.wav',
-      },
-      {
-        name: 'Kobus',
-        sound: 'cat.mp3',
+        name: 'Lekker aand',
+        sound: './sounds/driaan/27.mp3',
       },
     ],
   },
@@ -236,7 +126,7 @@ export default function Home() {
   const [activeItems, setActiveItems] = useState(tabs[0].items)
 
   useEffect(() => {
-    window.addEventListener('keypress', (e) => {
+    window.addEventListener('keydown', (e) => {
       switch (e.key) {
         case '1':
           document.getElementById('key_1')?.click()
@@ -354,31 +244,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen text-center bg-black">
-      <Head>
-        <title>Doussy Sound Board</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <div className="p-3 mb-3 font-bold bg-green-500">
-        <div>Doussy Sound Board</div>
-      </div>
-
-      <div className="flex justify-between mb-3">
-        {tabs.map((tab) => (
-          <div
-            key={tab.name}
-            className="p-2 text-xl font-bold cursor-pointer bg-amber-500"
-            onClick={() => {
-              setActiveTab(tab.name)
-              setActiveItems(tab.items)
-            }}
-          >
-            {tab.name}
-          </div>
-        ))}
-      </div>
-
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-10">
         {activeItems.slice(0, 10).map((item, index) => (
           <div
             id={`key_${index + 1}`}
