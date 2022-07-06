@@ -30,7 +30,7 @@ let tabs = [
         sound: './sounds/driaan/5.mp3',
       },
       {
-        name: 'Raakgery',
+        name: 'Raakgery!',
         sound: './sounds/driaan/6.mp3',
       },
       {
